@@ -1,0 +1,177 @@
+.col-sm{
+    display: grid;
+    border: 15px solid white;
+    background-color: rgb(121,148,189);
+    height: 150px;
+    color: white;
+    text-align:center;
+    align-items: center;
+    
+}
+.container{
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.con {
+    display: flex;
+    align-items: center;
+}
+.but {
+   
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+/* SliderButton.css */
+.slider-container {
+    display: flex;
+    align-items: center;
+    width: 170px; /* Adjust as needed */
+    height: 65px;
+    background-color: #05568c; /* Blue background for options */
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; /* Ensure the container is positioned relatively */
+    
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    z-index: 2;
+}
+
+.option{
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    user-select: none;
+}
+
+.slider {
+    width: 80px; /* Initial width of the slider */
+    height: 50px;
+    left: 5px;
+    margin-top: 7px;
+    background-color: white;
+    transition: left 0.5s ease-in-out;
+    z-index: 1;
+    position: absolute; /* Position the slider absolutely within the container */
+    top: 0;
+    border-radius: 30px;
+    
+}
+
+.slider.yearly {
+    left: 50%; /* Slide the slider over the "Yearly" option */
+    
+}
+
+.monthly-text {
+    color:#05568c; /* Color for "Monthly" text when it's selected */
+}
+
+.yearly-text {
+    color: white; /* Color for "Yearly" text when it's selected */
+}
+
+
+
+
+.cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Horizontally center content */
+    /* align-items: center; Vertically center content */
+    /* min-height: 100vh; Ensure the container takes up at least the full viewport height */
+}
+
+/* .table-wrapper {
+    border: 1px solid #ccc;
+    padding: 20px;
+} */
+/* .table-wrapper {
+    background: var(--white);
+    overflow-x: auto;
+  } */
+  
+  table {
+    width: 100%;
+    
+  }
+  
+  table tr {
+    display: flex;
+    margin-bottom: 10px;
+
+  }
+  
+  table th,
+  table td {
+    width: 25%;
+    min-width: 150px;
+    padding: 7px;
+  }
+
+
+.tab td:nth-child(1) {
+    /* border-right: 100px solid transparent; */
+    border-left: 120px solid transparent;
+    width: 500px;
+    
+}
+
+.tab td:nth-child(2)
+ {
+    /* border-right: 100px solid transparent; */
+    border-left: 170px solid transparent;
+    /* border-right: 0px solid transparent; */
+    text-align: center;
+}
+.tab td:nth-child(3){
+    border-left: 50px solid transparent;
+    text-align: center;
+}
+.tab td:nth-child(4){
+    text-align: center;
+    /* border-right: 30px solid transparent; */
+}
+.tab td:nth-child(5){
+    text-align: center;
+    border-right: 80px solid transparent;
+    
+}
+
+.tab tr:nth-child(-n+3) {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.col-sm:hover{
+    background:#05568c ;
+    cursor: pointer;
+    transition: 0.8s;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 55% 80%, 47% 89%, 38% 80%, 1% 80%);     */
+}
+.tab td.col-hover {
+    color: #05568c;
+    font-weight:500;
+    
+}
+.bn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#05568c ;
+}
+.butn{
+    background-color: #05568c;
+    color: white;
+    width: 400px;
+    border-radius: 4px;
+    height: 50px;
+    
+}
